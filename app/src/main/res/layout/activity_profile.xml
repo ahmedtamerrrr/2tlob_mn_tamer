@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page"
+    android:clipToPadding="false"
+    android:fillViewport="true"
+    android:paddingBottom="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="28dp"
+        android:paddingTop="56dp"
+        android:paddingEnd="28dp">
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:contentDescription="Otlob men Tamer"
+            android:src="@drawable/logo_otlob" />
+
+        <TextView
+            style="@style/Text.Otlob.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Your details" />
+
+        <TextView
+            style="@style/Text.Otlob.Subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Keep them fresh so the food finds you." />
+
+        <EditText
+            android:id="@+id/profileNameEditText"
+            style="@style/Widget.Otlob.Field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:autofillHints="name"
+            android:drawableStart="@drawable/ic_field_person"
+            android:hint="Full name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/profileEmailEditText"
+            style="@style/Widget.Otlob.Field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:drawableStart="@drawable/ic_field_email"
+            android:enabled="false"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/ink_muted" />
+
+        <EditText
+            android:id="@+id/profileAddressEditText"
+            style="@style/Widget.Otlob.Field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:autofillHints="postalAddress"
+            android:drawableStart="@drawable/ic_field_home"
+            android:hint="Delivery address"
+            android:inputType="textPostalAddress" />
+
+        <EditText
+            android:id="@+id/profilePhoneEditText"
+            style="@style/Widget.Otlob.Field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:autofillHints="phone"
+            android:drawableStart="@drawable/ic_field_phone"
+            android:hint="Phone number"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/saveProfileButton"
+            style="@style/Widget.Otlob.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="Save changes" />
+
+        <Button
+            android:id="@+id/backToLoginButton"
+            style="@style/Widget.Otlob.Button.Secondary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Back" />
+    </LinearLayout>
+</ScrollView>

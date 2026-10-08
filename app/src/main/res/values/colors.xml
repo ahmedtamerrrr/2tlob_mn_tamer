@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="page">#FFF7FFE0</color>
+    <color name="ink">#FF272729</color>
+    <color name="ink_muted">#FF5F5F52</color>
+    <color name="ink_hint">#FF7A7A68</color>
+    <color name="bun_deep">#FFB06A2A</color>
+    <color name="field_border">#FFD9D8BC</color>
+    <color name="field_disabled">#FFEDEFD6</color>
+</resources>
